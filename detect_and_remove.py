@@ -1,6 +1,7 @@
 # x>0 to remove pemanent
 #x<=0 to check
 
+
 # import the necessary packages
 from imutils import paths
 import numpy as np
@@ -29,8 +30,9 @@ def dhash(image, hashSize=8):
 print("[INFO] computing image hashes...")
 imagePaths = list(paths.list_images("dataset"))
 hashes = {}
+print("Value of x :")
+
 x=int(input())
-x=-1;
 # loop over our image paths
 for imagePath in imagePaths:
 	# load the input image and compute the hash
